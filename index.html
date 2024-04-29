@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2023 PORTFOLIO_by[ ]</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css"
+        integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullpage.js/dist/fullpage.min.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/index.css">
+
+
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+        integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/fullpage.js/dist/fullpage.min.js"></script>
+
+    <script>
+
+        $(function () {
+
+            var myFullpage = new fullpage('#fullpage', {
+                //sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+                anchors: ['firstPage', 'secondPage', '3rdPage', '4rdPage', '5Page', '6Page', '7Page', '8Page',],
+
+                navigationPosition: 'right',
+                navigation: true,
+                navigationTooltips: ['HOME', 'ABOUT', 'Web Redesign.01', 'Web Redesign.02', 'Web Redesign.03', 'Mobile Design', 'Graphic Design', 'Contact'],
+                showActiveTooltip: true,
+                //menu: '#menu'
+            });
+
+            //graphic_swiper
+            var swiper = new Swiper(".mySwiper", {
+                effect: "coverflow",
+                grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: "auto",
+                coverflowEffect: {
+                    rotate: 50,
+                    stretch: 0,
+                    depth: 100,
+                    modifier: 1,
+                    slideShadows: true,
+                },
+
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                loop: true,
+            });
+
+            //mouse cursor
+            let mouseX
+            let mouseY
+            const cursor = document.querySelector('#cursor')
+
+            document.addEventListener('mousemove', function (e) {
+                mouseX = e.clientX
+                mouseY = e.clientY
+                cursor.style.left = mouseX + 'px'
+                cursor.style.top = mouseY + 'px'
+            })
+
+        });//
+
+    </script>
+</head>
+
+<body>
+    <div class="section_bg bg1"></div><!-- 배경애니 효과 -->
+    <div class="section_bg bg2"></div>
+
+    <div id="cursor" class="intro_ani ani_on"></div><!-- 마우스커서 효과 -->
+
+    <header class="intro_ani ani_on">
+
+        <h1><a href="#firstPage">By[ ]</a></h1>
+        <ul id="myMenu">
+            <li data-menuanchor="firstPage" class="active"><a href="#firstPage">HOME</a></li>
+            <li data-menuanchor="secondPage"><a href="#secondPage">ABOUT</a></li>
+            <li data-menuanchor="thirdPage"><a href="#3rdPage">WEB<span class="mobile_skip"> REDESIGN</span></a>
+                <ul class="sub">
+                    <li data-menuanchor="thirdPage"><a href="#thirdPage">Tamburins </a></li>
+                    <li data-menuanchor="fourthPage"><a href="#fourthPage">국립현대미술관</a></li>
+                    <li data-menuanchor="fifthPage"><a href="#fifthPage">KCC 건설</a></li>
+                    <li data-menuanchor="sixthPage"><a href="#sixthPage">추가할예정</a></li>
+                </ul>
+            </li>
+            <li data-menuanchor="seventhPage"><a href="#6Page">MOBILE <span class="mobile_skip">REDESIGN</span></a>
+            </li>
+            <li data-menuanchor="eighthPage"><a href="#7Page">GRAPHIC<span class="mobile_skip"> DESIGN</span></a>
+            </li>
+            <li data-menuanchor="firstPage"><a href="#8Page">CONTACT</a></li>
+
+        </ul>
+    </header>
+
+    <main>
+        <div id="fullpage">
+
+            <div class="section" id="home">
+                <div class="cloud_l"></div>
+                <div class="cloud_r"></div>
+
+                <div class="layer title">
+                    <div class="title_container">
+                        <h1>
+                            <span class="intro_ani ani_on"><strong>2024</strong>ver. <strong> UI UX </strong></span>
+                            <span class="line intro_ani ani_on"></span>
+                            <span class="intro_ani ani_on"> <strong>WEB DESIGNER </strong> </span>
+                        </h1>
+                        <h1 class="intro_ani ani_on">PORTFOLIO</h1>
+                    </div>
+                </div>
+
+                <p class="scroll"><span></span></p>
+            </div><!-- .home end -->
+
+            <div class="section" id="about">
+
+                <div class="inner">
+                    <div class="box_img">
+                        <h1>Hello,</h1>
+
+                        <div>
+                            <img src="img/증명사진.jpg" alt="img">
+                        </div>
+                    </div><!-- .box_img -->
+
+                    <div class="intro_txt">
+                        <ul>
+                            <li>
+                                <em>ABOUT ME</em>
+                                <span><strong>NAME</strong> 유보영</span>
+                                <span><strong>BIRTH</strong>1993.08.25</span>
+                                <span><strong>ADDRESS</strong>부산광역시 해운대구</span>
+                            </li>
+
+                            <li>
+                                <em>CONTACT</em>
+                                <span><img src="./img/about_call.png" alt="휴대전화">010.2202.1618</span>
+                                <span><img src="./img/about_mail.png" alt="메일">yooob1602@gmail.com</span>
+                            </li>
+                        </ul>
+
+                        <ul>
+
+                            <li>
+                                <em>CERTIFICATE</em>
+                                <span><strong>2023.06 - 2023.11</strong>UI/UX 반응형 웹디자인& 웹퍼블리셔 수료</span>
+                                <span><strong>2015.10</strong>컬러리스트 산업기사</span>
+                                <span><strong>2013.08</strong>운전면허증 2종 보통</span>
+                            </li>
+
+                            <li>
+                                <em>SKILL</em>
+                                <div class="skill">
+                                    <div class="skill_top">
+                                        <img src="./img/icon_html.png" alt="html">
+                                        <img src="./img/icon_css.png" alt="css">
+                                        <img src="./img/icon_js.png" alt="js">
+                                        <img src="./img/icon_jquery.png" alt="jquery">
+                                        <img src="./img/icon_react.png" alt="react">
+                                    </div><!-- .skill_top end -->
+
+                                    <div class="skill_bottom">
+                                        <img src="./img/icon_git.png" alt="git">
+                                        <img src="./img/icon_github.png" alt="github">
+                                        <img src="./img/icon_ps.png" alt="photoshop">
+                                        <img src="./img/icon_ai.png" alt="illustrator">
+                                        <img src="./img/icon_figma.png" alt="figma">
+                                    </div><!-- .skill_bottom end -->
+                                </div><!-- .skill end -->
+                            </li>
+                        </ul>
+                    </div> <!-- .intro_txt end -->
+                </div><!-- .inner end -->
+            </div>
+
+            <div class="section" id="web_tam">
+                <div class="inner">
+
+                    <div class="title">
+                        <h2>탬버린즈<span>감각적인 향을 지향하는 코스메틱 브랜드</span></h2>
+                        <p>Photoshop, Figma,Vscode 를 사용하여 탬버린즈의 웹사이트를 리뉴얼한 프로젝트 입니다.</p>
+                    </div><!-- .title end -->
+
+                    <div class="web_01">
+                        <a href="#">
+                            <img src="img/web_tam_moc.png" alt="tam_mocup">
+                        </a>
+
+                        <div class="web_info">
+                            <ul>
+                                <li>프로젝트<span>웹리뉴얼 & 퍼블리싱</span></li>
+                                <li>프로그램<span>VScode ∥ Photoshop ∥ Figma</span></li>
+                                <li>사용언어<span>html ∥ css ∥ jquery</span></li>
+                                <li>기여도<span>디자인 100% ∥ 퍼블리싱 100%</span></li>
+                            </ul>
+
+                            <ul class="btn">
+                                <li><a href="https://www.tamburins.com/" target="_blank">PREV</a></li>
+                                <li><a href="https://yooooooob.github.io/tamburins/" target="_blank">GO TO WEB</a></li>
+                                <li><a href="img/탬버린즈_프로세스.pdf" target="_blank">PROCESS</a></li>
+                            </ul>
+                        </div>
+
+                    </div><!-- .web_01 end -->
+                </div><!-- .inner end -->
+
+                <p class="mockup mockup_tam mockup_ani">
+                    <img src="img/web_tam_mac_moc.png" alt="tam_mac_moc">
+                    <span></span>
+                </p>
+            </div><!-- #web_tam end _01-->
+
+            <div class="section" id="web_mmca">
+                <div class="inner">
+
+                    <div class="title">
+                        <h2>국립현대미술관<span>다채로운 전시를 만날 수 있는 미술관</span></h2>
+                        <p>Photoshop, Figma,Vscode 를 사용하여 국립현대미술관의 웹사이트를 리뉴얼한 프로젝트 입니다.</p>
+                    </div><!-- .title end -->
+
+                    <div class="web_01">
+                        <a href="#">
+                            <img src="img/web_mmca_moc.png" alt="mmca_mocup">
+                        </a>
+
+                        <div class="web_info">
+                            <ul>
+                                <li>프로젝트<span>웹리뉴얼 & 퍼블리싱</span></li>
+                                <li>프로그램<span>VScode ∥ Photoshop ∥ Figma</span></li>
+                                <li>사용언어<span>html ∥ css ∥ jquery</span></li>
+                                <li>기여도<span>디자인 100% ∥ 퍼블리싱 100%</span></li>
+                            </ul>
+
+                            <ul class="btn">
+                                <li><a href="https://www.mmca.go.kr/" target="_blank">PREV</a></li>
+                                <li><a href="https://yooooooob.github.io/mmca/" target="_blank">GO TO WEB</a></li>
+                                <li><a href="img/mmca_프로세스.pdf" target="_blank">PROCESS</a></li>
+                            </ul>
+                        </div>
+
+                    </div><!-- .web_01 end -->
+                </div><!-- .inner end -->
+
+                <p class="mockup mockup_mmca mockup_ani">
+                    <img src="img/web_mmca_mac_moc.png" alt="mmca_mac_moc">
+                    <span></span>
+                </p>
+
+            </div><!-- #web_mmca end _02-->
+
+            <div class="section" id="web_kcc">
+                <div class="inner">
+
+                    <div class="title">
+                        <h2>KCC 건설<span>삶의 가치를 재창조하는 글로벌 건설 기업</span></h2>
+                        <p>Photoshop, Figma,Vscode 를 사용하여 KCC 건설의 웹사이트를 리디자인한 프로젝트 입니다.</p>
+                    </div><!-- .title end -->
+
+                    <div class="web_01">
+                        <a href="#">
+                            <img src="img/web_kcc_moc.png" alt="mocup">
+                        </a>
+
+                        <div class="web_info">
+                            <ul>
+                                <li>프로젝트<span>웹리뉴얼 & 퍼블리싱</span></li>
+                                <li>프로그램<span>VScode ∥ Photoshop ∥ Figma</span></li>
+                                <li>사용언어<span>html ∥ css ∥ jquery</span></li>
+                                <li>기여도<span>디자인 100% ∥ 퍼블리싱 100%</span></li>
+                            </ul>
+
+                            <ul class="btn">
+                                <li><a href="https://www.kccworld.net/main.do" target="_blank">PREV</a></li>
+                                <li><a href="https://yooooooob.github.io/kcc/" target="_blank">GO TO WEB</a></li>
+                                <li><a href="img/kcc건설_프로세스.pdf" target="_blank">PROCESS</a></li>
+                            </ul>
+                        </div>
+                    </div><!-- .web_01 end -->
+                </div><!-- .inner end -->
+
+                <p class="mockup mockup_kcc mockup_ani">
+                    <img src="img/web_kcc_mac_moc.png" alt="web_kcc_mac_moc">
+                    <span></span>
+                </p>
+
+            </div><!-- #web_kcc end _03-->
+
+
+            <div class="section" id="app">
+                <div class="inner">
+
+                    <div class="app_text">
+                        <div class="app_info">
+                            <h1>부산 관광 명소<span>Mobile App Design</span></h1>
+                            <h2>Visit Busan <span>( 가제 )</span></h2>
+                            <p>부산시 관광 명소 공공데이터 API 자료를 axios 라이브러리로 불러와<br />
+                                리액트를 사용하여 모바일 용도로 제작했습니다.</p>
+                        </div><!-- .app_info end -->
+
+                        <div class="app_prog">
+
+                            <ul class="left">
+                                <li>프로젝트</li>
+                                <li>프로그램</li>
+                                <li>사용언어</li>
+                                <li>기여도</li>
+                            </ul><!-- .left end -->
+
+                            <ul class="right">
+                                <li>앱 리뉴얼 & 퍼블리싱</li>
+                                <li>Photoshop <span>｜</span> VScode</li>
+                                <li>html<span>｜</span>css<span>｜</span>react<span>｜</span>javascript</li>
+                                <li>디자인 100%<span>｜</span>퍼블리싱 100% </li>
+                            </ul><!-- .right end -->
+
+                        </div><!-- .app_prog end -->
+
+                        <div class="app_btn">
+                            <ul>
+                                <li><a href="#">GO TO WEB</a></li>
+                                <li><a href="img/관광명소_프로세스.pdf" target="_blank">PROCESS</a></li>
+                            </ul>
+                        </div><!-- .app_btn end -->
+
+                    </div><!-- .app_text end -->
+
+                    <p class="mobile_ani mockup">
+                        <img src="img/mockup_mobile.png" alt="mobile_moc">
+                        <span></span>
+                    </p><!-- .mobile_ani end -->
+
+                    <p class="mobile_side">
+                        <img src="img/mockup_mobile.png" alt="mobile_moc">
+                        <span></span>
+                    </p><!-- .mobile_ani end -->
+
+                    <p class="mobile_shadow">
+                        <img src="img/mockup_mobile_shadow.png" alt="shadow">
+                    </p><!-- .mobile_shadow end -->
+
+                    <p class="mobile_side_shadow">
+                        <img src="img/mockup_mobile_shadow.png" alt="shadow">
+                    </p><!-- .mobile_side_shadow end -->
+
+                </div><!-- .inner end -->
+
+            </div><!-- #app end -->
+
+            <div class="section" id="graphic">
+                <div class="gp_title">
+                    <h2>GRAPHIC DESIGN</h2>
+                    <p>Adobe Photoshop, Adobe Illustrator, Figma 를 사용하여 제작하였습니다.</p>
+                    <span>※이미지를 클릭하시면 크게 볼 수 있습니다※</span>
+                </div><!-- .gp_title end -->
+
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <a href="img/illust_어텀네일.jpg" data-fancybox="images">
+                                <img src="img/illust_어텀네일.jpg" alt="graphic_img" />
+                                <p><strong>Illustrator</strong> : 광고 배너</p>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="img/ps_샐러드그린 .jpg" data-fancybox="images">
+                                <img src="img/ps_샐러드그린 .jpg" alt="graphic_img" />
+                                <p><strong>Photoshop</strong> : 광고 배너</p>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="img/ps_항공권 쿠폰.jpg" data-fancybox="images">
+                                <img src="img/ps_항공권 쿠폰.jpg" alt="graphic_img" />
+                                <p><strong>Photoshop</strong> : 광고 배너</p>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="img/figma_오난코리아_상세페이지.png" data-fancybox="images">
+                                <img src="img/figma_오난코리아_상세페이지.png" alt="graphic_img" />
+                                <p><strong>Figma</strong> : 상세페이지</p>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="img/figma_바이컬러_상세페이지.png" data-fancybox="images">
+                                <img src="img/figma_바이컬러_상세페이지.png" alt="graphic_img" />
+                                <p><strong>Figma</strong> : 상세페이지</p>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="img/figma_trendy_style.png" data-fancybox="images">
+                                <img src="img/figma_trendy_style.png" alt="graphic_img" />
+                                <p><strong>Figma</strong> : 썸머 티셔츠 기획전 배너</p>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="img/figma_데님 의류_배너.png" data-fancybox="images">
+                                <img src="img/figma_데님 의류_배너.png" alt="graphic_img" />
+                                <p><strong>Figma</strong> : 광고 상세 배너</p>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="img/figma_의류_배너.png" data-fancybox="images">
+                                <img src="img/figma_의류_배너.png" alt="graphic_img" />
+                                <p><strong>Figma</strong> : 광고 상세 배너</p>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="img/figma_잇수다_상세페이지_모작.png" data-fancybox="images">
+                                <img src="img/figma_잇수다_상세페이지_모작.png" alt="graphic_img" />
+                                <p><strong>Figma</strong> : 광고 상세 배너</p>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="img/figma_hap_리디자인.png" data-fancybox="images">
+                                <img src="img/figma_hap_리디자인.png" alt="graphic_img" />
+                                <p><strong>Figma</strong> : 광고 상세 배너</p>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="img/figma_모바일_상세페이지.png" data-fancybox="images">
+                                <img src="img/figma_모바일_상세페이지.png" alt="graphic_img" />
+                                <p><strong>Figma</strong> : 모바일 상세 배너</p>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="img/figma_모바일_상세페이지_리빙.png" data-fancybox="images">
+                                <img src="img/figma_모바일_상세페이지_리빙.png" alt="graphic_img" />
+                                <p><strong>Figma</strong> : 모바일 상세 배너</p>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="img/figma_모바일_상세페이지_의류.png" data-fancybox="images">
+                                <img src="img/figma_모바일_상세페이지_의류.png" alt="graphic_img" />
+                                <p><strong>Figma</strong> : 모바일 상세 배너</p>
+                            </a>
+                        </div>
+
+                    </div><!-- .swiper-wrapper end -->
+                </div><!-- . mySwiper end -->
+
+            </div><!-- #graphic end -->
+
+            <div class="section" id="contact">
+                <div class="cloud_l"></div><!-- 기존 이미지 rotate 180도 -->
+                <div class="cloud_r"></div>
+
+                <div class="cloud_l_2"></div>
+                <div class="cloud_r_2"></div>
+
+                <div class="inner">
+                    <div class="contact_info">
+                        <div class="con_img">
+                            <img src="img/Contact.png" alt="Contact">
+                        </div>
+
+                        <div class="text">
+                            <strong>문의사항은 이메일로 연락바랍니다.</strong>
+
+                            <a href="#" class="mail_btn">
+                                <p>Click here↓</p>
+
+                                <figure>
+                                    <a href="https://www.google.com/intl/ko/gmail/about/">
+                                        <img class="mail_icon" src="img/contact_mail.png" alt="메일이미지">
+                                    </a>
+                                </figure>
+                            </a><!-- .mail_btn end -->
+
+                            <p class="mail_shadow">
+                                <img src="img/mockup_mobile_shadow.png" alt="shadow">
+                            </p><!-- .mail_shadow end -->
+
+                            <h3>Thanks For Watching!</h3>
+
+                        </div> <!-- .text end -->
+                    </div><!-- .contact_info end -->
+
+                </div> <!-- .inner end -->
+            </div><!-- #contact end -->
+
+            <div class="section fp-auto-height" id="footer">
+                <div class="inner">
+                    <ul>
+                        <li> all materials are used for educational and non-commercial purpose only</li>
+                        <li>©copyright 2024 Boyoung Yoo. All Right Reserved.</li>
+                    </ul>
+                </div><!-- .inner end -->
+            </div><!-- #footer end -->
+
+        </div><!-- #fullpage end💤 -->
+    </main>
+
+</body>
+
+</html>
